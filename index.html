@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taha Lahmamy | CV Futuristique</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Poppins',sans-serif;
+      background:#050816;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    body::before{
+      content:"";
+      position:fixed;
+      width:100%;
+      height:100%;
+      background:
+      radial-gradient(circle at top left,#00f0ff33,transparent 30%),
+      radial-gradient(circle at bottom right,#8b5cf633,transparent 30%);
+      z-index:-1;
+    }
+
+    .container{
+      width:90%;
+      max-width:1300px;
+      margin:auto;
+      padding:40px 0;
+    }
+
+    .hero{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      min-height:100vh;
+    }
+
+    .left{
+      flex:1;
+      min-width:300px;
+    }
+
+    .left h1{
+      font-family:'Orbitron',sans-serif;
+      font-size:70px;
+      line-height:1;
+      color:#00e5ff;
+      text-shadow:0 0 20px #00e5ff;
+    }
+
+    .left h2{
+      margin-top:20px;
+      color:#a5b4fc;
+      font-size:28px;
+    }
+
+    .left p{
+      margin-top:25px;
+      line-height:1.8;
+      color:#cbd5e1;
+      max-width:650px;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:30px;
+      padding:15px 35px;
+      border:2px solid #00e5ff;
+      color:#00e5ff;
+      text-decoration:none;
+      border-radius:12px;
+      transition:0.3s;
+      font-weight:bold;
+    }
+
+    .btn:hover{
+      background:#00e5ff;
+      color:#050816;
+      box-shadow:0 0 20px #00e5ff;
+    }
+
+    .right{
+      flex:1;
+      display:flex;
+      justify-content:center;
+      min-width:300px;
+    }
+
+    .profile-card{
+      width:350px;
+      height:450px;
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.1);
+      backdrop-filter:blur(10px);
+      border-radius:25px;
+      padding:30px;
+      text-align:center;
+      box-shadow:0 0 30px rgba(0,229,255,0.2);
+    }
+
+    .profile-card img{
+      width:180px;
+      height:180px;
+      border-radius:50%;
+      object-fit:cover;
+      border:4px solid #00e5ff;
+      box-shadow:0 0 25px #00e5ff;
+    }
+
+    .profile-card h3{
+      margin-top:20px;
+      font-size:28px;
+      color:#00e5ff;
+    }
+
+    .profile-card p{
+      margin-top:10px;
+      color:#cbd5e1;
+    }
+
+    section{
+      margin-top:100px;
+    }
+
+    .section-title{
+      font-family:'Orbitron',sans-serif;
+      font-size:40px;
+      color:#00e5ff;
+      margin-bottom:40px;
+      text-align:center;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:rgba(255,255,255,0.05);
+      padding:30px;
+      border-radius:20px;
+      border:1px solid rgba(255,255,255,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      box-shadow:0 0 25px rgba(0,229,255,0.3);
+    }
+
+    .card h3{
+      color:#00e5ff;
+      margin-bottom:15px;
+    }
+
+    .card ul{
+      padding-left:20px;
+      line-height:2;
+      color:#dbeafe;
+    }
+
+    footer{
+      margin-top:100px;
+      padding:30px;
+      text-align:center;
+      color:#94a3b8;
+      border-top:1px solid rgba(255,255,255,0.1);
+    }
+
+    .contact{
+      line-height:2;
+      font-size:18px;
+    }
+
+    @media(max-width:900px){
+      .hero{
+        flex-direction:column;
+        text-align:center;
+      }
+
+      .left h1{
+        font-size:50px;
+      }
+
+      .left{
+        margin-bottom:50px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <section class="hero">
+
+      <div class="left">
+        <h1>TAHA<br>LAHMAMY</h1>
+
+        <h2>Éducateur & Informaticien</h2>
+
+        <p>
+          Passionné par l’informatique, l’éducation et les nouvelles technologies.
+          Avec 4 ans d’expérience dans l’enseignement, je crée des environnements
+          d’apprentissage modernes, interactifs et motivants.
+        </p>
+
+        <a href="CV.pdf" download class="btn">
+  Télécharger CV
+</a>
+      </div>
+
+      <div class="right">
+        <div class="profile-card">
+
+          <!-- Remplace photo.jpg par ton image -->
+          <img src="MONIMGcv.png" alt="Taha Lahmamy">
+
+          <h3>Taha Lahmamy</h3>
+
+          <p>
+            Licencié en Éducation d'Informatique
+          </p>
+
+        </div>
+      </div>
+
+    </section>
+
+    <section>
+
+      <h2 class="section-title">EXPÉRIENCE</h2>
+
+      <div class="grid">
+
+        <div class="card">
+          <h3>Professeur d’informatique</h3>
+          <p>École privée Diwane Al Maarifa</p>
+          <ul>
+            <li>Enseignement informatique</li>
+            <li>Utilisation du manuel Pixel</li>
+            <li>Gestion des classes</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Stage pédagogique</h3>
+          <p>Lycée Ibn Al-Haytham</p>
+          <ul>
+            <li>Cours d’informatique</li>
+            <li>Gestion Massar</li>
+            <li>Club informatique</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section>
+
+      <h2 class="section-title">SKILLS</h2>
+
+      <div class="grid">
+
+        <div class="card">
+          <h3>Soft Skills</h3>
+
+          <ul>
+            <li>Communication</li>
+            <li>Travail en équipe</li>
+            <li>Leadership</li>
+            <li>Organisation</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Technologies</h3>
+
+          <ul>
+            <li>C++</li>
+            <li>Machine Learning</li>
+            <li>Excel</li>
+            <li>Outils pédagogiques numériques</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section>
+
+      <h2 class="section-title">ÉDUCATION</h2>
+
+      <div class="grid">
+
+        <div class="card">
+          <h3>Licence Informatique</h3>
+          <p>ESEF Oujda</p>
+          <p>2021 - 2024</p>
+        </div>
+
+        <div class="card">
+          <h3>Baccalauréat</h3>
+          <p>Sciences Physiques Français</p>
+          <p>2020 - 2021</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section>
+
+      <h2 class="section-title">CONTACT</h2>
+
+      <div class="card contact">
+
+        <p>E-mail: lahmamy098@gmail.com</p>
+        <p>Num   : +212 622469316</p>
+        <p>Témara, Maroc</p>
+
+      </div>
+
+    </section>
+
+    <footer>
+      © 2026 - Taha Lahmamy 
+    </footer>
+
+  </div>
+
+</body>
+</html>
